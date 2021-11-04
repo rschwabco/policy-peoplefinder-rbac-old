@@ -38,9 +38,11 @@ jobs:
     - name: Push Policy 
       id: aserto-push
       uses: aserto-dev/aserto-push-action@v2
-      env:
-        ASERTO_PUSH_KEY: ${{ secrets.ASERTO_PUSH_KEY }}
       with:
         bundle: build/bundle.tar.gz
         release_id: ${{ steps.release.outputs.release_id }}
+        policy_registry: https://bundler.eng.aserto.com/v1
+        policy_id: ${{ secrets.PI }}
+        tenant_id: ${{ secrets.TI }}
+        policy_registry_key: ${{ secrets.PUK }}
         verbose: true
