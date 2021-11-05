@@ -11,15 +11,15 @@ default enabled = false
 
 allowed {
 	some index
-	data.roles.roles[peoplefinder.roles[index]].perms["peoplefinder.DELETE.api.users.__id"].allowed
+	data.roles.roles[peoplefinder.roles[index]].perms[path].allowed
 }
 
 visible {
 	some index
-	data.roles.roles[peoplefinder.roles[index]].perms["peoplefinder.DELETE.api.users.__id"].visible
+	data.roles.roles[peoplefinder.roles[index]].perms[path].visible
 }
 
 enabled {
 	some index
-	data.roles.roles[peoplefinder.roles[index]].perms["peoplefinder.DELETE.api.users.__id"].enabled
+	data.roles.roles[peoplefinder.roles[index]].perms[path].enabled
 }
