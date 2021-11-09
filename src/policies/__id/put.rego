@@ -1,6 +1,7 @@
 package peoplefinder.PUT.api.users.__id
 
 import input.policy.path
+
 import input.user.attributes
 
 default allowed = false
