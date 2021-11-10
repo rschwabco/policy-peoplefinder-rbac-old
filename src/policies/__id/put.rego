@@ -19,6 +19,11 @@ allowed {
 	input.user.id == input.resource.id
 }
 
+allowed {
+	props = attributes.properties
+	props.department == "Sales Engagement Management"
+}
+
 visible {
 	some index
 	data.roles.roles[attributes.roles[index]].perms[path].visible
